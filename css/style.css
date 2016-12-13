@@ -15,8 +15,8 @@ h2 {
 }
 p {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 100;
 }
 
 /* Grid */
@@ -26,14 +26,13 @@ p {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;;
+  position: relative;
 }
-.container:before,
-.container:after {
+.container: before, .container: after {
   content: " ";
   display: table;
 }
-.container:after {
+.container: after {
   clear: both;
 }
 .one-half, .one-third, .one-fourth {
@@ -42,4 +41,99 @@ p {
   position: relative;
   min-height: 1px;
   margin: 0 2% 20px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .one-half {
+    width: 46%;
+  }
+  .one-third {
+    width: 29.3333%;
+  }
+  .one-fourth {
+    width: 21%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+/* Header */
+
+header {
+  color: #ffffff;
+  background: #34495E;
+  background-image: linear-gradient(206deg, #5181A3 0%, rgba(51,73,94,0.50) 100%);
+}
+header nav {
+  padding: 1em 0;
+}
+header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+header nav ul > li.btn-outline {
+  padding: 10px 15px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+}
+header nav ul > li.btn-outline:hover {
+  background: #ffffff;
+}
+header nav ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav ul > li.btn-outline:hover > a {
+  color: #34495e;
+}
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+header .hero h1 {
+  font-size: 48px;
+  font-weight: normal;
+  margin: 95px 0 0;
+}
+header .hero p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 100;
+  margin: 10px 0 40px;
+}
+header .hero img {
+  display: block;
+  margin: 3em auto -1em;
+}
+
+/* Button */
+
+.btn {
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 30px;
+  background: #2ecc71;
+  border: 2px solid #2ecc71;
+  box-shadow: 0px 2px 0px 0px #22894e;
 }
