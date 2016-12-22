@@ -588,3 +588,11 @@ header .hero img {
    line-height: 18px;
    margin:5px 0 0;
  }
+
+ /* ACTIVE EFFECT */
+ .items ul li a.active {
+   color: #5181A3;
+ }
+ .items ul li.active-background {
+   background: #ffffff;
+ }
